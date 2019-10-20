@@ -3,15 +3,19 @@ package basic.java.calculator.implementation;
 public class OperationCalculator implements IOperationCalculator {
 
 	@Override
-	public Double add(double number1, double number2) {
-		// TODO Auto-generated method stub
-		return null;
+	public Double add(Double firstNumber, Double secondNumber) {
+
+		Double result = firstNumber + secondNumber;
+		return result;
+
 	}
 
 	@Override
-	public Double sub(double number1, double number2) {
-		// TODO Auto-generated method stub
-		return null;
+	public Double sub(Double firstNumber, Double secondNumber) {
+		
+		Double result = firstNumber - secondNumber;
+		return result;
+		
 	}
 
 }
