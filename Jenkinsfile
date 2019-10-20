@@ -10,7 +10,7 @@ pipeline {
 	     stage ('Unit Tests') {
 			steps {
 						
-				bat 'gradle test'
+				bat 'gradlew test --info'
 						
 			}
 		}
