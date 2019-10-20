@@ -4,6 +4,8 @@ public class BasicJavaCalculator {
 
 	public static void main(String[] args) {
 		
+		//Empty class - Execution
+		
 	}
 
 }
