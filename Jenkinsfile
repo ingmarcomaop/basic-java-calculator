@@ -5,7 +5,7 @@
 
 		triggers { pollSCM('* * * * *') }
     	tools {
-			 gradle "GRADLE"
+			 gradle "gradle_6.0"
 			 
 		 }
 		 
@@ -14,7 +14,7 @@
 			stage ('Build code') {
 				steps {
 			
-					sh 'gradle build'
+					bat 'gradle build'
 					
 				}
 			}
