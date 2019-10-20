@@ -16,6 +16,7 @@ public class BasicJavaCalculator {
 		Double subtraction = operationcalculator.sub(firstNumber, secondNumber);
 		
 		System.out.println("Addition result: " + addition + "\nSubtraction result: " + subtraction);
+		System.out.println("Testing auto commit");
 		
 	}
 
