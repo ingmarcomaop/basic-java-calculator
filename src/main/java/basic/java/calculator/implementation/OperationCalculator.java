@@ -3,7 +3,7 @@ package basic.java.calculator.implementation;
 public class OperationCalculator implements IOperationCalculator {
 
 	@Override
-	public Double add(Double firstNumber, Double secondNumber) {
+	public Double addition(Double firstNumber, Double secondNumber) {
 
 		Double result = firstNumber + secondNumber;
 		return result;
@@ -11,7 +11,7 @@ public class OperationCalculator implements IOperationCalculator {
 	}
 
 	@Override
-	public Double sub(Double firstNumber, Double secondNumber) {
+	public Double subtraction(Double firstNumber, Double secondNumber) {
 		
 		Double result = firstNumber - secondNumber;
 		return result;

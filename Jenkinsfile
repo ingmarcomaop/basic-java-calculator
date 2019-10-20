@@ -6,5 +6,14 @@ pipeline {
                 bat 'gradlew build --info'
             }
         }
+        
+	     stage ('Unit Tests') {
+			steps {
+						
+				sh 'gradle test'
+						
+			}
+		}
+      
     }
 }
