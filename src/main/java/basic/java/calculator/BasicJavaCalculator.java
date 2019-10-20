@@ -5,8 +5,9 @@ import basic.java.calculator.implementation.*;
 public class BasicJavaCalculator {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	
+		
+		/*
+		
 		IOperationCalculator operationcalculator = new OperationCalculator();
 		
 		Double firstNumber = 1.0;
@@ -16,8 +17,8 @@ public class BasicJavaCalculator {
 		Double subtraction = operationcalculator.subtraction(firstNumber, secondNumber);
 		
 		System.out.println("Addition result: " + addition + "\nSubtraction result: " + subtraction);
-		System.out.println("Testing auto commit");
 		
+		*/
 	}
 
 }
