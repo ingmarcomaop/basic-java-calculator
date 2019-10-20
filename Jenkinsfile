@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
-            steps {
-                bat 'gradlew build --info'
-            }
-        }
         
 	     stage ('Unit Tests') {
 			steps {
@@ -14,6 +9,25 @@ pipeline {
 						
 			}
 		}
+		
+		stage('Build') {
+            steps {
+                bat 'gradlew build --info'
+            }
+        }
+        
+        stage('Static Code Analysis') {
+            steps {
+                withSonarQubeEnv('SonarQubeLocal') {
+                    
+                    bat 'gradlew --info sonarqube -x test'
+                    
+                }
+
+            }
+        }
+        
+        
       
     }
 }
