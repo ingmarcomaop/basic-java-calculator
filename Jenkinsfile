@@ -10,7 +10,7 @@ pipeline {
 	     stage ('Unit Tests') {
 			steps {
 						
-				sh 'gradle test'
+				bat 'gradle test'
 						
 			}
 		}
